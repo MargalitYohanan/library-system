@@ -1,0 +1,45 @@
+.notification-item {
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  margin-bottom: 10px;
+  background-color: var(--color-surface);
+  border-right: 3px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  text-align: right;
+  direction: rtl;
+}
+
+.notification-item--unread {
+  background-color: var(--color-accent-soft);
+  border-right-color: var(--color-accent);
+}
+
+.notification-item__content {
+  font-size: 0.95rem;
+  color: var(--color-ink);
+  line-height: 1.5;
+}
+
+.notification-item__date {
+  color: var(--color-ink-soft);
+  display: block;
+  margin-top: 6px;
+  font-size: 0.75rem;
+}
+
+/* גרסה מצומצמת - לדרופדאון של הפעמון */
+.notification-item--compact {
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  box-shadow: none;
+  border-radius: 6px;
+}
+
+.notification-item--compact .notification-item__content {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

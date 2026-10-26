@@ -1,0 +1,106 @@
+.notification-bell-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.notification-bell-trigger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-ink);
+  cursor: pointer;
+  opacity: 1;
+  visibility: visible;
+}
+
+.notification-bell-trigger svg {
+  display: block;
+  width: 22px;
+  height: 22px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.notification-bell-trigger:hover {
+  background-color: var(--color-accent-soft);
+  color: var(--color-accent-dark);
+}
+
+.notification-bell-badge {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background-color: var(--color-danger);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  border: 2px solid var(--color-surface);
+}
+
+.notification-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 340px;
+  max-width: 90vw;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card-hover);
+  overflow: hidden;
+  z-index: 200;
+  direction: rtl;
+}
+
+.notification-dropdown__header {
+  padding: 12px 16px;
+  font-weight: 700;
+  font-family: var(--font-display);
+  color: var(--color-ink);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.notification-dropdown__body {
+  max-height: 340px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.notification-dropdown__status {
+  text-align: center;
+  color: var(--color-ink-soft);
+  font-size: 0.9rem;
+  padding: 24px 8px;
+  margin: 0;
+}
+
+.notification-dropdown__footer {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-paper);
+  color: var(--color-accent-dark);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.notification-dropdown__footer:hover {
+  background: var(--color-accent-soft);
+}

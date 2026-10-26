@@ -1,0 +1,154 @@
+/* src/pages/AiRecommendations/AiRecommendations.css */
+
+.ai-container {
+  --rec-card: #f8fafc;
+  --rec-border: #e2e8f0;
+  --rec-text: #1e293b;
+  --rec-muted: #64748b;
+  --rec-primary: #3b82f6;
+  --rec-primary-hover: #2563eb;
+  --rec-danger: #ef4444;
+  
+  padding: 20px;
+  direction: rtl;
+  text-align: right;
+}
+
+.toolbar-panel {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--rec-border);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.user-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.user-form label {
+  font-weight: 500;
+  color: var(--rec-text);
+}
+
+.user-form input {
+  width: 70px;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--rec-border);
+  background: #fff;
+  font-size: 0.9rem;
+}
+
+.action-buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* עיצוב בסיסי לכל כפתורי הפעולה */
+.btn-action {
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid var(--rec-border);
+  background-color: #f8fafc; /* רקע אפרפר עדין שיראה מעולה על לבן */
+  color: #334155;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-action:hover:not(:disabled) {
+  background-color: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+/* כפתור ראשי - כחול */
+.btn-action.primary {
+  background: var(--rec-primary);
+  color: white;
+  border-color: transparent;
+}
+.btn-action.primary:hover:not(:disabled) { 
+  background: var(--rec-primary-hover); 
+}
+
+/* כפתור מחיקה - אדום עדין */
+.btn-action.danger {
+  background-color: #fff5f5;
+  color: var(--rec-danger);
+  border-color: #feb2b2;
+}
+.btn-action.danger:hover:not(:disabled) { 
+  background: #fed7d7;
+  border-color: #fc8181;
+}
+
+.btn-action:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.reason-card {
+  background: var(--rec-card);
+  border: 1px solid var(--rec-border);
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.reason-card h3 {
+  margin-top: 0;
+  color: var(--rec-text);
+}
+
+.reason-text {
+  font-size: 1.05rem;
+  color: #0f172a;
+}
+
+.meta-info {
+  font-size: 12px;
+  color: var(--rec-muted);
+  margin-bottom: 0;
+}
+
+.books-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  margin-top: 1.5rem;
+}
+
+.error-box {
+  color: var(--rec-danger);
+  background-color: #fff5f5;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #fed7d7;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.empty-state {
+  background: var(--rec-card);
+  border: 1px solid var(--rec-border);
+  border-radius: 14px;
+  padding: 40px;
+  text-align: center;
+}
+
+.empty-state h2 {
+  color: var(--rec-text);
+  margin-top: 0;
+}
+
+.empty-state p {
+  color: var(--rec-muted);
+}

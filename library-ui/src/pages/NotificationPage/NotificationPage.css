@@ -1,0 +1,46 @@
+.notification-page {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 0 20px 60px;
+  direction: rtl;
+}
+
+.notification-page__title {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--color-ink);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.notification-page__empty {
+  text-align: center;
+  color: var(--color-ink-soft);
+  margin-top: 40px;
+}
+
+.notification-page__loading {
+  text-align: center;
+  color: var(--color-accent-dark);
+  margin: 16px 0;
+}
+
+.notification-page__load-more {
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  cursor: pointer;
+  background-color: var(--color-accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-card);
+  transition: background-color 0.2s ease;
+}
+
+.notification-page__load-more:hover {
+  background-color: var(--color-accent-dark);
+}
